@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>3D Thesis Book - Interactive Direct Reader</title>
-    <!-- Preconnect at DNS Prefetch para mas mabilis mag-load ang link -->
+    <!-- Preconnect and DNS Prefetch for faster link loading -->
     <link rel="preconnect" href="https://digitalbook-blip.github.io">
     <link rel="dns-prefetch" href="https://digitalbook-blip.github.io">
     
@@ -274,7 +274,7 @@
                 ctx.fillRect(creaseX - grooveWidth, 0, grooveWidth * 2, canvas.height);
                 texture.needsUpdate = true;
                 
-                // Itago ang loading message kapag nag-load na ang mga images
+                // Hide loading message once images are successfully loaded
                 const loaderEl = document.getElementById('loading');
                 if (loaderEl) loaderEl.style.display = 'none';
             };
